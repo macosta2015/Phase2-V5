@@ -22,15 +22,15 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
         // Launch browser and navigate to the document
         const newPage = await launchBrowserAndNavigateToDocument(); // Ensure this returns a newPage object
 
-        //Select index
-        // const desiredIndex = 6;
-        // await clickButtonByIndex(newPage, desiredIndex);
+
         const selector = 'div[data-id="XgmGAQ7RqnVg1wa8"]'; // Replace with the appropriate selector
         const title = '(2) Extrude 1(4.00) did not regenerate properly: Select face or sketch region to extrude.'; // Replace with the desired title
+
 
         console.log("AAAAAAAAAA");
         await waitForEnter();
         console.log("BBBBBBBBBB");
+
 
         // Perform right-click on the specified element
         console.log('Right-clicking on the specified element.');
@@ -54,6 +54,7 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
         await newPage.keyboard.press('Enter');
         console.log('await newPage.keyboard.press')
 
+        //Select index
         const desiredIndex7 = 7;
         await clickButtonByIndex(newPage, desiredIndex7);
         console.log("GGGGGGGGGGGG");
@@ -62,8 +63,8 @@ const { performRightClickOptionByTitle } = require('./components/performRightCli
         // Perform the edit function
         // Perform right-click on the specified element
         const selector7 = 'div[data-id="AJC+8X/uU1MWWXEK"]'; // Replace with the appropriate selector
-        // const title7 = '(3) Extrude Sketch(1.03) did not regenerate properly: Select a sketch plane.'; // Replace with the desired title
         const title7 = '(3) Extrude Sketch(1.03) did not regenerate properly: Select a sketch plane.<br>1 missing selection'; // Replace with the desired title
+        // const title7 = '(3) Extrude Sketch(1.03) did not regenerate properly: Select a sketch plane.'; // Replace with the desired title
         // (3) Extrude Sketch(1.03) did not regenerate properly: Select a sketch plane.< br > 1 missing selection
         // const title7 = '(3) Extrude Sketch(1.03)'; // Replace with the desired title
         // (3) Extrude Sketch(1.03) did not regenerate properly: Select a sketch plane.< br > 1 missing selection
